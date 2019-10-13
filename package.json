@@ -1,0 +1,22 @@
+{
+  "name": "express-js-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onlinegurucool/express-js-tutorial.git"
+  },
+  "author": "onlinegurucool",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onlinegurucool/express-js-tutorial/issues"
+  },
+  "homepage": "https://github.com/onlinegurucool/express-js-tutorial#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
