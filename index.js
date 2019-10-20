@@ -1,6 +1,17 @@
 const express = require('express');
-const app = express();
 const PORT = 8080;
+const exphbs = require('express-handlebars');
+
+
+
+const app = express();
+
+var hbs = exphbs.create({
+    extname: 'hbs'
+})
+
+app.engine('hbs',hbs.engine)
+app.set('view engine','hbs')
 
 app.use(express.urlencoded({extended: true}));
 

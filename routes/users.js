@@ -38,5 +38,9 @@ router.post("/get-data-from-client/:category/:product_id",
     })
 })
 
+router.get('/profile',(req,res) => {
+    res.render('profile',{})
+})
+
 
 module.exports = router;
