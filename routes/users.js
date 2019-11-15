@@ -39,7 +39,14 @@ router.post("/get-data-from-client/:category/:product_id",
 })
 
 router.get('/profile',(req,res) => {
-    res.render('profile',{})
+    res.render('profile',{
+        title: 'welcome to profile page',
+        arr: [1,2,3],
+        obj: {
+            fn:1,
+            ln: 2
+        }
+    })
 })
 
 
