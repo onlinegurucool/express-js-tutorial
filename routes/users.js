@@ -21,4 +21,21 @@ router.post("/edit/:user_id", async (req, res) => {
     }
 });
 
+router.param("user_id", async (req, res, next, id) => {
+    try {
+        let resp = await userModel.read(id);
+        if(!resp.length) {
+            res.send({
+                msg: "This id is not valid",
+            });
+        }
+    } catch (error) {
+        res.send({
+            msg: "Error while validating params",
+            error,
+        });
+    }
+    next();
+});
+
 module.exports = router;
